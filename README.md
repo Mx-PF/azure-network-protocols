@@ -1,5 +1,12 @@
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines using Wireshark</h1>
-In this tutorial, we will observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+
+<h1 align="center"> Setting NSGs & Inspecting Traffic in Azure </h1> 
+
+<p align="center">
+<img src="https://media.licdn.com/dms/image/v2/D4D12AQGOxeJbAJEPWg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1694217648572?e=2147483647&v=beta&t=38G-4FyIB9rFftVAczYfUvZl5T8Ry5sf02MQdEJcrTU" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+In this tutorial, we will observe various network traffic to and from Azure Virtual Machines with Wireshark and experiment with Network Security Groups. <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -60,7 +67,7 @@ This guide shows you how to use Wireshark to watch network traffic between Azure
 
 ### Step 1: Set Up Your Azure Environment
 - **Create a Resource Group in Azure**  
-  Go to Azure, make a new Resource Group.  
+  Go to Azure and make a new Resource Group.  
   <img src="https://i.imgur.com/dOAeXqs.png" height="75%" width="100%" alt="Resource Group"/>
 
 - **Create a Windows Virtual Machine (VM)**  
@@ -96,7 +103,7 @@ This guide shows you how to use Wireshark to watch network traffic between Azure
   <img src="https://i.imgur.com/bihftKK.png" height="75%" width="100%" alt="ICMP traffic - perpetual ping"/>
 
 - **Block ICMP Traffic**  
-  In Azure, go to the Network Security Group (NSG) for your Ubuntu VM. Block incoming ICMP traffic. Back in the Windows VM, watch the ICMP traffic stop in Wireshark and the command prompt.  
+  In Azure, go to the Network Security Group (NSG) for your Ubuntu VM. Block incoming ICMP traffic. Watch the ICMP traffic stop in Wireshark and the command prompt in the Windows VM.  
   <img src="https://i.imgur.com/ovGk5dq.png" height="75%" width="100%" alt="ICMP traffic - perpetual ping"/>  
   <img src="https://i.imgur.com/NjuUANI.png" height="75%" width="100%" alt="ICMP traffic - ICMP denied"/>
 
